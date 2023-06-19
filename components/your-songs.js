@@ -4,28 +4,27 @@ import {
 } from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { HotJobCard } from './hot-job-card';
+import { SongCard } from './song-card';
 
-export function HotJobs() {
+export function YourSongs() {
   const { width } = Dimensions.get('window');
   return (
     <GestureHandlerRootView>
       <View>
         <View style={styles.sectionHeader}>
-          <Text style={styles.sectionHeaderTitle}>Hot Jobs This Month</Text>
-          <Text>show all</Text>
+          <Text style={styles.sectionHeaderTitle}>Just for you</Text>
         </View>
         <View style={styles.carousel}>
           <View style={{ flex: 1 }}>
             <Carousel
-              width={width * 0.85}
+              width={width * 0.35}
               style={{
                 width: '100%', marginRight: -20,
               }}
-              height={width / 2}
+              height={width * 0.3}
               data={[...new Array(6).keys()]}
               renderItem={({ index }) => (
-                <HotJobCard />
+                <SongCard />
               )}
             />
           </View>

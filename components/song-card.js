@@ -5,31 +5,11 @@ import {
 import { IconButton } from 'react-native-paper';
 import linkedin from '../assets/linkedin.png';
 
-export function HotJobCard() {
+export function SongCard() {
   return (
     <View style={styles.card}>
       <View style={styles.cardHeader}>
-        <Image source={linkedin} style={styles.logo} />
-        <View style={styles.cardHeaderText}>
-          <Text style={[styles.cardText, styles.cardHeaderTitle]}>Senior iOS Developer</Text>
-          <Text style={styles.cardText}>San Diego, CA</Text>
-        </View>
-        <IconButton icon="bookmark-outline" iconColor="white" style={styles.cardHeaderAction} />
-      </View>
-      <View style={styles.tags}>
-        <View style={styles.tag}>
-          <Text style={styles.tagLabel}>Fulltime</Text>
-        </View>
-        <View style={styles.tag}>
-          <Text style={styles.tagLabel}>2-3 Years</Text>
-        </View>
-        <View style={styles.tag}>
-          <Text style={styles.tagLabel}>On Site</Text>
-        </View>
-      </View>
-      <View style={styles.metadata}>
-        <Text style={styles.metadataText}>3 days ago</Text>
-        <Text style={[styles.metadataText, styles.metadataCount]}>58 Applicants</Text>
+        <Text style={styles.sectionHeaderTitle}>App Image</Text>
       </View>
     </View>
   );

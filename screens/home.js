@@ -1,14 +1,16 @@
 import React from 'react';
 import {
-  Text,
   StyleSheet,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { YourSongs } from '../components/your-songs';
+import { NewSongs } from '../components/new-songs';
 
 export function Home() {
   return (
     <SafeAreaView style={styles.root}>
-      <Text style={styles.header}>Just for you</Text>
+      <YourSongs />
+      <NewSongs />
     </SafeAreaView>
   );
 }
