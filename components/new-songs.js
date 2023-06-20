@@ -15,7 +15,7 @@ export function NewSongs() {
           <Text style={styles.sectionHeaderTitle}>New releases</Text>
         </View>
         <View style={styles.carousel}>
-          <View style={{ flex: 1 }}>
+          <View>
             <Carousel
               width={width * 0.35}
               style={{

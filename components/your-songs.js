@@ -15,7 +15,7 @@ export function YourSongs() {
           <Text style={styles.sectionHeaderTitle}>Just for you</Text>
         </View>
         <View style={styles.carousel}>
-          <View style={{ flex: 1 }}>
+          <View>
             <Carousel
               width={width * 0.35}
               style={{
@@ -46,6 +46,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
   },
   carousel: {
-
+    marginBottom: 40,
   },
 });
